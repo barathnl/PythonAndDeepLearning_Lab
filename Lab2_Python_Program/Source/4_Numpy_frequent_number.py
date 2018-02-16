@@ -5,4 +5,5 @@ inp = np.random.randint(0, 20, size=10)
 
 print("Vector list:", inp)
 
+#finding frequent number
 print("Most frequent item in the vector list is:",np.bincount(inp).argmax())

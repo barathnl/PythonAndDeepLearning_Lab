@@ -8,6 +8,7 @@ maxrange = int(var2)
 
 print("You can purchase following books:")
 
+#looping through dictionary by value to find range
 for key, value in books.items():
     if (value >= minrange and value<=maxrange):
         print(key)

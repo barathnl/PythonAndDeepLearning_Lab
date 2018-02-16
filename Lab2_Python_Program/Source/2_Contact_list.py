@@ -8,16 +8,21 @@ def menu():
 
 while True:
     choice = menu()
+
+    #display contact by name
     if choice==1:
         name = input("Enter name:")
         for x in Contact_list:
             if(x.get("name") == name):
                 print(x)
+
+    # display contact by number
     elif choice == 2:
         number = input("Enter number:")
         for x in Contact_list:
             if (x.get("number") == number):
                 print(x)
+    # Edit contact by number or email
     elif choice == 3:
         name = input("Enter name:")
         for x in Contact_list:
@@ -31,5 +36,6 @@ while True:
                     new_email = input("Enter new email:")
                     x["email"] = new_email
                 print(x)
+    #exit
     elif choice == 4:
         break
